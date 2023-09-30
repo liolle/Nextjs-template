@@ -1,5 +1,6 @@
 import React from "react";
 import { ExampleType, TEMPLATE_VERSION } from "@/types";
+import Image from "next/image";
 
 export default function Home() {
     const message: ExampleType = "Next";
@@ -17,10 +18,16 @@ export default function Home() {
                     </a>
                 </span>
             </section>
-            <section className=" flex flex-1 items-center justify-center">
+            <section className=" flex flex-1 items-center justify-center gap-1">
                 <div className=" ">
                     <span>{message} </span>
                 </div>
+                <Image
+                    src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3NZMfe-sJp_4h82eiU28rOetc46skyCDOw&usqp=CAU`}
+                    alt="ICON"
+                    width={30}
+                    height={30}
+                />
             </section>
         </main>
     );
