@@ -15,6 +15,7 @@
         "react-dom": "18.2.0"
     },
     "devDependencies": {
+        "@radix-ui/react-slot": "^1.0.2",
         "@types/node": "20.6.3",
         "@types/react": "18.2.22",
         "@types/react-dom": "18.2.7",
@@ -27,6 +28,7 @@
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.0",
         "eslint-plugin-react": "^7.33.2",
+        "lucide-react": "^0.279.0",
         "postcss": "8.4.30",
         "prettier": "3.0.3",
         "prettier-plugin-tailwindcss": "^0.5.4",
@@ -35,7 +37,6 @@
         "tailwindcss": "3.3.3",
         "tailwindcss-animate": "^1.0.7",
         "typescript": "5.2.2",
-        "@radix-ui/react-slot": "^1.0.2",
-        "lucide-react": "^0.279.0"
+        "vercel": "^32.3.0"
     }
 }
