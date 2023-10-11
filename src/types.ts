@@ -3,4 +3,4 @@
  */
 
 export type ExampleType = "Next";
-export const TEMPLATE_VERSION = "v.0.0.3";
+export const TEMPLATE_VERSION = "v.0.0.5";
