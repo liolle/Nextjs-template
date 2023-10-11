@@ -67,7 +67,7 @@ When deploying on vercel using NextAuth set the following environment variables
 -   NEXTAUTH_SECRET
 -   NEXTAUTH_URL
 
-#### DB
+### DB
 
 -   POSTGRES_DB=postgress
 -   POSTGRES_USER=postgres
@@ -77,4 +77,12 @@ Make sure to have docker-compose installed then docker-compose up from the folde
 
 ```
 docker-compose up
+```
+
+#### Drizzle
+
+-   run migration
+
+```
+npm run db:migrate
 ```
