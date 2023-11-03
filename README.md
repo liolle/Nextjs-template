@@ -86,3 +86,6 @@ docker-compose up
 ```
 npm run db:migrate
 ```
+
+### DOC (coming soon)
+
