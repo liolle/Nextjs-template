@@ -33,5 +33,5 @@ jobs:
               uses: peter-evans/create-pull-request@v5
               with:
                   base: "test"
+                  branch: "dev"
                   body: "This is an automated PR created by GitHub Actions"
-                  status-check: "L1-test"
