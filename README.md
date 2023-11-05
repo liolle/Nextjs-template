@@ -37,3 +37,56 @@ Add the following extensions
 ```
 
 ### Doc : (coming soon)
+
+### Deploying
+
+#### Vercel
+
+-   Create a branch named production
+
+```
+git checkout -b production
+```
+
+-   Create a Vercel [API Token](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token)
+
+-   Run vercel login
+
+```
+npx vercel login
+```
+
+-   Run vercel link to create a new Vercel project and get your VERCEL_ORG_ID, and VERCEL_PROJECT_ID (.vercel/project.json) .
+
+-   Inside GitHub, add VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID as [secrets]("https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions")
+
+Test the workflow by pushing modifications on the production brach.
+
+#### NextAuth
+
+When deploying on vercel using NextAuth set the following environment variables
+
+-   NEXTAUTH_SECRET
+-   NEXTAUTH_URL
+
+### DB
+
+-   POSTGRES_DB=postgress
+-   POSTGRES_USER=postgres
+-   POSTGRES_PASSWORD=postgres
+
+Make sure to have docker-compose installed then docker-compose up from the folder docker/db
+
+```
+docker-compose up
+```
+
+#### Drizzle
+
+-   run migration
+
+```
+npm run db:migrate
+```
+
+### DOC (coming soon)
