@@ -31,3 +31,7 @@ jobs:
 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
+              with:
+                  branch: example-patches
+                  base: test
+                  delete-branch: true
