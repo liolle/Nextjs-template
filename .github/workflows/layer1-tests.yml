@@ -32,6 +32,6 @@ jobs:
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
               with:
-                  base: "test"
-                  branch: "dev"
+                  base: dev
+                  branch: test
                   body: "This is an automated PR created by GitHub Actions"
