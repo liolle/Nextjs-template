@@ -30,8 +30,6 @@ jobs:
               run: npm test
 
             - name: Create Pull Request
-              uses: peter-evans/create-pull-request@v5
-              with:
-                  base: dev
-                  branch: test
-                  body: "This is an automated PR created by GitHub Actions"
+              run: gh pr create --base "test" --head "dev" --reviewer "liolle" --title "L1 tests" --body "Automated tests"
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
