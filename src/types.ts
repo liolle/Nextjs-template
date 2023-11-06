@@ -3,7 +3,7 @@
  */
 import * as z from "zod";
 
-export const APIVersion = "v0.1";
+export const TEMPLATE_VERSION = "v0.0.8";
 
 //-->Entity
 export type UserType = {
