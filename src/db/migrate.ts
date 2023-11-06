@@ -2,8 +2,8 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 import postgres from "postgres";
 
-// const connectionString = process.env.DATABASE_URL as string;
-const connectionString = "postgres://postgres:postgres@localhost:5432/postgres";
+// Create a table beforehand
+const connectionString = "postgres://postgres:postgres@localhost:5432/template";
 const sql = postgres(connectionString, { max: 1 });
 const db = drizzle(sql);
 
