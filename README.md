@@ -42,12 +42,6 @@ Add the following extensions
 
 #### Vercel
 
--   Create a branch named production
-
-```
-git checkout -b production
-```
-
 -   Create a Vercel [API Token](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token)
 
 -   Run vercel login
