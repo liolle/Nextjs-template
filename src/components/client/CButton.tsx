@@ -18,7 +18,7 @@ const CButton = ({ children }: PropType) => {
     };
 
     return (
-        <div className=" flex flex-col items-center justify-center gap-1">
+        <div className=" flex flex-col items-center justify-center gap-2">
             <div>{displayText}</div>
             <Button onClick={handleClick}>{children}</Button>
         </div>
