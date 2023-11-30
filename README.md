@@ -40,18 +40,4 @@ When deploying on vercel using NextAuth set the following environment variables
 -   POSTGRES_USER=postgres
 -   POSTGRES_PASSWORD=postgres
 
-Make sure to have docker-compose installed then docker-compose up from the folder docker/db
 
-```
-docker-compose up
-```
-
-#### Drizzle
-
--   run migration
-
-```
-npm run db:migrate
-```
-
-### DOC (coming soon)
